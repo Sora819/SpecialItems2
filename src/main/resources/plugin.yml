@@ -1,0 +1,29 @@
+name: SpecialItems
+author: Sora
+version: 1.5.3
+main: me.sora819.SpecialItems
+
+api-version: 1.16
+
+softdepend:
+    - mcMMO
+
+commands:
+    repairtalisman:
+        description: This command gives you a repair talisman
+    feedingtalisman:
+        description: This command gives you a feeding talisman
+    flyingboots:
+        description: This command gives you flying boots
+    healingtalisman:
+        description: This command gives you a healing talisman
+    explosivepickaxe:
+        description: This command gives you an explosive pickaxe
+    luckycharm:
+        description: This command gives you a lucky charm
+    setpickaxeradius:
+        aliases: [spr]
+        description: This command set the radius of the explosive pickaxe in your hand
+    specialitems:
+        aliases: [si, speciali]
+        description: Main command

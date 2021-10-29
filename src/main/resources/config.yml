@@ -1,0 +1,332 @@
+##########
+# Config #
+##########
+
+
+# Message for wrong command
+wrong_cmd: "&8[&3Special&9Items&8] &7Type '/specialitems help' for the commands"
+
+# Reload command message
+reload_cmd: "&8[&3Special&9Items&8] &7Config reloaded"
+
+# The permission-deny message
+permission_message: "&8[&3Special&9Items&8] &cYou don't have permission to do this!"
+
+# The message for deny in protected zones
+protection_message: "&8[&3Special&9Items&8] &cYou can't do that here!"
+
+wrong_item: "&8[&3Special&9Items&8] &cWrong item is in your hand!"
+
+# Help page of the plugin
+help_header: "&8[&3Special&9Items&8] &7Commands:"
+help_help: "&8- /specialitems &3help&8: &9Lists the commands"
+help_reload: "&8- /specialitems &3reload&8: &9Reloads the config"
+help_repairtalisman: "&8- /&3repairtalisman&8: &9Gives you a repair talisman"
+help_feedingtalisman: "&8- /&3feedingtalisman&8: &9Gives you a feeding talisman"
+help_flyingboots: "&8- /&3flyingboots&8: &9Gives you flying boots"
+help_healingtalisman: "&8- /&3healingtalisman&8: &9Gives you a healing talisman"
+help_explosivepickaxe: "&8- /&3explosivepickaxe&8: &9Gives you an explosive pickaxe"
+help_setpickaxeradius: "&8- /&3setpickaxeradius <radius>&8: &9Set the radius of the explosive pickaxe in your hand"
+help_luckycharm: "&8- /&3luckycharm&8: &9Gives you a lucky charm"
+
+player_not_found_msg: "&8[&3Special&9Items&8] &cPlayer not found!"
+
+###################
+# Repair talisman #
+###################
+
+repair_enabled: true
+
+# The message for the giving command
+repair_give_msg: "&8[&3Special&9Items&8] &7You got a repair talisman"
+
+# The message for giving the item to other player
+repair_give_other_msg: "&8[&3Special&9Items&8] &7You gave a repair talisman to %player%"
+
+# The repair item's name
+repair_item_name: "&3Repair talisman"
+
+# Repair cooldown in ticks (20 tick = 1 second)
+repair_time: 60
+
+# How much durability will be repaired
+repair_amount: 1
+
+# If true, then the repair effects can stack
+repair_stackable: true
+
+# The feeding item's lore (you can add more lines, or delete them, but one line must be there)
+repair_item_lore:
+    - "&cEvery 3 seconds while in your inventory "
+    - "&crepairs all your item by 1"
+    
+# Set false to remove crafting
+repair_craftenabled: true
+    
+# I think this is simple
+repair_recipe:
+    # ' ' (space) is empty place
+    - "gdg"
+    - "grg"
+    - "ggg"
+
+# You need to write the ID in letters
+repair_ingredients:
+    g: gold_block
+    r: redstone_block
+    d: diamond_block
+
+
+####################
+# Feeding talisman #
+####################
+
+feeding_enabled: true
+
+# The message for the giving command
+feeding_give_msg: "&8[&3Special&9Items&8] &7You got a feeding talisman"
+
+# The message for giving the item to other player
+feeding_give_other_msg: "&8[&3Special&9Items&8] &7You gave a feeding talisman to %player%"
+
+# The feeding item's name
+feeding_item_name: "&3Feeding talisman"
+
+# Feeding cooldown in ticks (20 tick = 1 second)
+feeding_time: 40
+
+# How much food will be added to you hunger bar
+feeding_amount: 1
+
+# If true, then the feeding effects can stack
+feeding_stackable: true
+
+# The feeding item's lore (you can add more lines, or delete them, but one line must be there)
+feeding_item_lore:
+    - "&cEvery 2 seconds while in your inventory "
+    - "&cfills your hunger bar by 1"
+    
+# Set false to remove crafting
+feeding_craftenabled: true
+    
+# I think this is simple
+feeding_recipe:
+    # ' ' (space) is empty place
+    - "geg"
+    - "gsg"
+    - "ggg"
+    
+# You need to write the ID in letters
+feeding_ingredients:
+    g: gold_block
+    s: golden_apple
+    e: emerald_block
+    
+    
+################
+# Flying boots #
+################
+
+flying_enabled: true
+
+# The message for the giving command
+flying_give_msg: "&8[&3Special&9Items&8] &7You got flying boots"
+
+# The message for giving the item to other player
+flying_give_other_msg: "&8[&3Special&9Items&8] &7You gave a flying boots to %player%"
+
+# The flying item's name
+flying_item_name: "&3Flying boots"
+
+# The flying item's lore (you can add more lines, or delete them, but one line must be there)
+flying_item_lore:
+    - "&cWhile equipped, you can fly "
+    - "&clike if you are in creative mode"
+    
+# Set false to remove crafting
+flying_craftenabled: true
+
+# I think this is simple
+flying_recipe:
+    # ' ' (space) is empty place
+    - "ded"
+    - "dbd"
+    - "ddd"
+    
+# You need to write the ID in letters
+flying_ingredients:
+    d: diamond_block
+    b: diamond_boots
+    e: elytra
+    
+
+####################
+# Healing talisman #
+####################
+
+healing_enabled: true
+
+# The message for the giving command
+healing_give_msg: "&8[&3Special&9Items&8] &7You got a healing talisman"
+
+# The message for giving the item to other player
+healing_give_other_msg: "&8[&3Special&9Items&8] &7You gave a healing talisman to %player%"
+
+# The healing item's name
+healing_item_name: "&3Healing talisman"
+
+# Healing cooldown in ticks (20 tick = 1 second)
+healing_time: 20
+
+# 2 hp = 1 heart
+healing_amount: 2
+
+# If true, then the healing effects can stack
+healing_stackable: true
+
+# The healing item's lore (you can add more lines, or delete them, but one line must be there)
+healing_item_lore:
+    - "&cEvery 1 seconds while in your inventory "
+    - "&cheals you by 2"
+
+# Set false to remove crafting
+healing_craftenabled: true    
+
+# I think this is simple
+healing_recipe:
+    # ' ' (space) is empty place
+    - "geg"
+    - "gog"
+    - "ggg"
+    
+# You need to write the ID in letters
+healing_ingredients:
+    g: gold_block
+    o: enchanted_golden_apple
+    e: emerald_block
+    
+    
+#####################
+# Explosive pickaxe #
+#####################
+
+explosive_enabled: true
+
+# The message for the giving command
+explosive_give_msg: "&8[&3Special&9Items&8] &7You got an explosive pickaxe"
+
+# The message for giving the item to other player
+explosive_give_other_msg: "&8[&3Special&9Items&8] &7You gave an explosive pickaxe to %player%"
+
+# The message if the player wrote too large number
+setexplosiveradius_large_msg: "&8[&3Special&9Items&8] &7That's too large, the maximum is %max_radius%"
+
+# The message if the player wrote too small number
+setexplosiveradius_small_msg: "&8[&3Special&9Items&8] &7That's too small, the minimum is 1"
+
+# The message for radius set
+setexplosiveradius_msg: "&8[&3Special&9Items&8] &7The radius of the explosive pickaxe set to %radius%"
+
+# The explosive pickaxe's name
+explosive_item_name: "&3Explosive pickaxe"
+
+# 1 = 3x3, 2 = 5x5, ...
+max_explosion_radius: 2
+
+# The explosive pickaxe's lore
+explosive_item_lore:
+    - "&cWhen mining a block with this pickaxe "
+    - "&cit creates an explosion around the mined block, "
+    - "&cthat will break other blocks near (and drop them)"
+    
+# This will be displaying before the radius in the lore
+explosive_radius_lore: "&aExplosive (%radius%) (%size%)"
+    
+# Set false to remove crafting
+explosive_craftenabled: true
+    
+# I think this is simple
+explosive_recipe:
+    # ' ' (space) is empty place
+    - "ttt"
+    - "gpg"
+    - "ggg"
+    
+# You need to write the ID in letters
+explosive_ingredients:
+    t: tnt
+    p: diamond_pickaxe
+    g: gunpowder
+    
+        
+###############
+# Lucky charm #
+###############
+
+luckycharm_enabled: true
+
+# The message for the giving command
+luckycharm_give_msg: "&8[&3Special&9Items&8] &7You got a lucky charm"
+
+# The message for giving the item to other player
+luckycharm_give_other_msg: "&8[&3Special&9Items&8] &7You gave a lucky charm to %player%"
+
+# The message if there are no stones
+luckycharm_no_stone: "&8[&3Special&9Items&8] &cNo stone found"
+
+# The message if the lucky charm is empty
+luckycharm_empty: "&8[&3Special&9Items&8] &cLucky charm is empty"
+
+# The lucky charm's name
+luckycharm_item_name: "&3Lucky charm"
+
+# 1 = 3x3, 2 = 5x5, ...
+luckycharm_radius: 2
+
+# The minimum delay between lucky charm uses
+luckycharm_delay: 10
+
+# The luckycharm's lore
+luckycharm_item_lore:
+    - "&cWhen right clicking on a block "
+    - "&cit turns random stones around the block"
+    - "&cinto ores"
+
+# Set false to remove crafting
+luckycharm_craftenabled: true
+    
+# You can write here the ores and their chance to spawn
+luckycharm_ores:
+    coal_ore: 50
+    iron_ore: 25
+    gold_ore: 10
+    redstone_ore: 5
+    diamond_ore: 2.5
+    emerald_ore: 1
+
+# Just type the color code for the ores in the luckycharm's lore (like 1 (dark blue) or b (light blue))
+luckycharm_lore_list_color: 6
+    
+# I think this is simple
+luckycharm_recipe:
+    # ' ' (space) is empty place
+    - "sgs"
+    - "cei"
+    - "sds"
+    
+# You need to write the ID in letters
+luckycharm_ingredients:
+    d: diamond_ore
+    g: gold_ore
+    e: emerald
+    c: coal_ore
+    i: iron_ore
+    s: stone
+    
+        
+###############
+# Mob catcher #
+###############
+
+mobcatcher_enabled: true
+    
